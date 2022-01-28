@@ -189,11 +189,34 @@ img {
     transform: scaleX(1.05);
 }
 
+@media (min-width: 768px) { 
+    .list__element--2col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
 .list__heading {
     text-align: left;
     font-size: 3rem;
     color: var(--primary-color);
     margin: 0;
+}
+
+.list_number {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--primary-color);
+    font-weight: 900;
+    margin: 0;
+}
+@media (min-width: 768px) { 
+    .list_number {
+        font-size: 3rem;
+        flex-basis: 20rem;
+    }
 }
 
 .list__text {
@@ -241,5 +264,31 @@ img {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 5rem;
         align-items: center;  
+    }
+}
+
+/* commissions */
+@media (min-width: 768px) { 
+    .commisions__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }
+}
+@media (min-width: 992px) { 
+    .commisions__grid {
+        align-items: center;
+    }
+}
+
+.commisions_text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+@media (min-width: 768px) { 
+    .commisions_text {
+        text-align: left;
     }
 }
